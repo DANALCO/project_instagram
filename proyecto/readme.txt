@@ -1,1 +1,1 @@
-aqui se encuentra la parte del proyecto de Juan pablo
+aqui se encuentra la parte del proyecto de Nicolas
