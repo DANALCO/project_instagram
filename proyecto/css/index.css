@@ -1,0 +1,137 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  main {
+    display: flex;
+    gap: 10px;
+  }
+  /*Aside*/
+  
+  .body {
+    width: 60%;
+    padding: 20px 0px;
+    margin-left: 265px;
+  }
+  
+  .logo {
+    margin-top: 29px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .aside {
+    position: fixed;
+    margin-top: 0;
+    padding-right: 5px;
+    width: 4%;
+    border-right: #d5dbdb 1px solid;
+  }
+  
+  .contendor_op {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contendor_op div {
+    position: relative;
+    padding: 16px 10px 18px 0px;
+    cursor: pointer;
+  }
+  
+  .contendor_op div:hover {
+    background-color: #f4f6f6;
+    border-radius: 15px;
+  }
+  
+  svg:hover {
+    margin: scale(1.1);
+  }
+  
+  .mas {
+    margin-top: 38px;
+    cursor: pointer;
+    margin: 10px 8px;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .mas:hover {
+    background-color: #f4f6f6;
+    border-radius: 15px;
+  }
+
+  /*chats*/
+  .chats{
+  position: flex;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  margin-left: 63px;
+  width: 370px;
+  height: 97.3vh;
+  font-size: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+ 
+}
+.chats a{
+  color: black;
+  text-decoration: none;
+  margin-top: 12px;
+}
+.container_chats{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.chat{
+  display: flex;
+  
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+.chat img{
+  width: 49px;
+  height: 48px;
+  border-radius: 150px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+}
+.chat p{
+  justify-content: first baseline;
+}
+.mensj_chat img{
+  margin-top: 280px;
+  margin-left: 400px;
+
+}
+.mensj_chat h3{
+  margin-left: 395px;
+}
+.mensj_chat p{
+  margin-left: 270px;
+}
+.mensj_chat a{
+  margin-left: 385px;
+  background-color: #1f91cd;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 8px 13px;
+  border-radius: 10px;
+}
+
+
+
+

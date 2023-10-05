@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./img/logoinsta1.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandeja de entrada • Chats</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/botones.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Montserrat:ital,wght@0,400;1,200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--Aside izquierdo-->
+      <div class="aside">
+        <img class="logo" src="./img/logoinsta.png" width="30px" />
+        <div class="contendor_op">
+          <div class="inicio" id="inicio-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-home-2"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M10 12h4v4h-4z" />
+            </svg>
+            
+          </div>
+
+          <div class="buscar" id="buscar-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+            
+          </div>
+          <div class="explorar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-safari"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            </svg>
+            
+          </div>
+
+          <div class="reels">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-youtube"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+              />
+              <path d="M10 9l5 3l-5 3z" />
+            </svg>
+            
+          </div>
+
+          <div class="mensajes">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-messenger"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              <path d="M8 13l3 -2l2 2l3 -2" />
+            </svg>
+            
+          </div>
+<!--Menu de Notificaciones-->
+          <div class="notificaciones">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-heart"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+              />
+            </svg>
+            
+          </div>
+          <div class="menu_not activado">
+            
+            <div class="container_not">
+              <h1>Notificaciones</h1>
+              <h3>Hoy</h3>
+              <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil6.jpg"
+              />
+              <p><strong>camilo.b</strong> ha comenzado a seguirte. 1 min</p>
+            </div>
+            <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil6.jpg"
+              >
+              
+              <p>A <strong>camilo.b</strong> le ha gustado tu foto. 3min</p>
+              
+            </div>
+            <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil6.jpg"
+              />
+              <p><strong>camilo.b</strong>, ha quien quizas conoscas, esta en Instagram. 3 h</p>
+              
+            </div>
+            <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil3.jpg"
+              />
+              <p><strong>docMila</strong> ha comenzado a seguirte. 4 h</p>
+              
+            </div>
+            <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil2.jpg"
+              />
+              <p><strong>valent_gt•</strong> ha comenzado a seguirte. 5 h</p>
+              
+            </div>
+            <div class="not_hoy">
+              <img
+              src="./img/fotos_perfil/perfil7.jpg"
+              />
+              <p><strong>dariotonetto</strong>ha comenzado a seguirte. 5 h</p>
+              
+            </div>
+            </div>
+          </div>
+
+          <script>
+            const buscarContainer = document.querySelector(".menu_not");
+            const buscar = document.querySelector(".notificaciones");
+
+            buscar.addEventListener("click", () => {
+              buscarContainer.classList.toggle("activado");
+            });
+          </script>
+
+          <div class="crear">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-circle-plus"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+              <path d="M9 12h6" />
+              <path d="M12 9v6" />
+            </svg>
+            
+          </div>
+
+          <div class="perfil_menu">
+            <img
+              src="./img/fotos_perfil/perfil1.jpg"
+              width="25"
+              height="25"
+              style="
+                border-radius: 150px;
+                padding-right: 5px;
+                margin-bottom: -5px;
+              "
+            />
+            
+          </div>
+        </div>
+
+        <!--Boton más-->
+
+        <div class="mas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-baseline-density-medium"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="padding-right: 5px; margin-bottom: -5px"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 20h16" />
+            <path d="M4 12h16" />
+            <path d="M4 4h16" />
+          </svg>
+          
+          <div class="menu_mas actives">
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-settings"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                />
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              </svg>
+              Configuración
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-clock-hour-7"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 12l-2 3" />
+                <path d="M12 7v5" />
+              </svg>
+              Tu actividad
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+              Guardado
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-sun-low"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M4 12h.01" />
+                <path d="M12 4v.01" />
+                <path d="M20 12h.01" />
+                <path d="M12 20v.01" />
+                <path d="M6.31 6.31l-.01 -.01" />
+                <path d="M17.71 6.31l-.01 -.01" />
+                <path d="M17.7 17.7l.01 .01" />
+                <path d="M6.3 17.7l.01 .01" />
+              </svg>
+              Apariencia
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-alert-square-rounded"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+                />
+                <path d="M12 8v4" />
+                <path d="M12 16h.01" />
+              </svg>
+              Reportar un problema
+            </div>
+
+            <div class="down-table">
+              <p>Cambiar de cuenta</p>
+              <p>Salir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Chats-->
+
+      <section class="chats">
+      <div class="container_chats">
+        <a href="#"><H1>lunaferrer</H1></a>
+          <h4>Mensajes</h4>
+       <a href="#"> <div class="chat">
+          <img
+          src="./img/fotos_perfil/perfil6.jpg"
+          />
+          <p><strong>camilo.b</strong> Ultima actividad hace 2 h</p>
+        </div>
+      </a>
+      <a href="#">  <div class="chat">
+          <img
+          src="./img/fotos_perfil/perfil3.jpg"
+          />
+          <p><strong>docMila</strong> Ultima actividad hace 5 h</p>
+        </div></a>
+        <a href="#"><div class="chat">
+          <img
+          src="./img/fotos_perfil/perfil7.jpg"
+          />
+          <p><strong>darionetto</strong> Ultima actividad hace 24 m</p>
+        </div></a>
+        <a href="#"><div class="chat">
+          <img
+          src="./img/fotos_perfil/evan.jpg"
+          />
+          <p><strong>evan.castro_,</strong> Ultima actividad hace 8 m</p>
+        </div></a>
+        <a href="#"><div class="chat">
+          <img
+          src="./img/fotos_perfil/karen.jpg"
+          />
+          <p><strong>karen_castano11</strong> Ultima actividad hace 3 h</p>
+        </div></a>
+        <a href="#"><div class="chat">
+          <img
+          src="./img/fotos_perfil/e.jpg"
+          />
+          <p><strong>eonlinelatino</strong> Ultima actividad hace 53 m</p>
+        </div></a>
+      </div>
+    </section>
+    <div class="mensj_chat">
+    <img src="./img/chat.png" >
+    <h3>Tus Mensajes</h3>
+    <p>Envía fotos y mensajes privados a un amigo o grupo</p>
+    <a href="#">Enviar mensaje</a>
+  </div>
+      </div>
+    </main>
+    <script src="./js/mas.js"></script>
+  </body>
+</html>

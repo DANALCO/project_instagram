@@ -1,0 +1,106 @@
+ /*Boton notificaciones*/
+ .menu_not :hover {
+  background-color: white !important;
+}
+
+.menu_not {
+  position: flex;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  top: -450px;
+  left: 42px;
+  width: 380px;
+  height: 100vh;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  z-index: 500;
+}
+
+.activado {
+  display: none;
+}
+
+.container_not{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 9px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.not_hoy{
+  display: flex;
+  justify-content: first baseline;
+
+}
+.not_hoy img{
+  width: 45px;
+  height: 45px;
+  border-radius: 150px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+}
+.not_hoy p{
+  justify-content: first baseline;
+}
+
+.menu_not.activado {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/*Boton más*/
+.menu_mas {
+  position: absolute;
+  font-weight: 600;
+  top: -369px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 350px;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+.actives {
+  display: none;
+}
+
+.ref_mas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ref_mas:hover {
+  background-color: #f4f6f6;
+  cursor: pointer;
+}
+
+.menu_mas.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.down-table p {
+  padding: 15px;
+}
+
+.down-table p:hover {
+  background-color: #f4f6f6;
+  border-radius: 5px;
+}
+
