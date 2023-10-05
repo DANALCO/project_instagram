@@ -1,1 +1,1 @@
-aqui se encuentra el pgitroyecto de prueba
+aqui se encuentra el proyecto de prueba
