@@ -1,0 +1,346 @@
+/* Estilo para el contenedor principal "cont-video" */
+.cont-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    width: 30%;
+    position: relative; /* Para que el botón esté posicionado relativo a este contenedor */
+}
+/* Estilo para el sub-contenedor "vid" */
+.vid {
+    border-radius: 5px;
+    flex: 1;
+    overflow: hidden;
+    position: relative; /* Para que el botón esté posicionado relativo a este contenedor */
+}
+/* Estilo para el video dentro de "vid" */
+.vid video {
+    width:480px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilo para la imagen dentro de "vid" */
+.pausa {
+    position: absolute;
+    top: 46%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegura que la imagen esté por encima del video */
+    cursor: pointer;
+}
+/* Estilo para el sub-contenedor "bar" */
+.bar {
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Estilo para los botones dentro de "bar" */
+.bar button {
+    background-color: white;
+    border: none;
+    padding: 25px 0 0 0;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+.bar button:hover{
+    opacity: 0.5; /* Puedes ajustar el valor para cambiar el nivel de brillo */
+}
+/* Estilo para el botón de mute */
+.mute-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 50%; /* Para hacerlo circular */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.oculto {
+    display: none;
+    transform: scale(0); /* Inicialmente, la imagen está escalada a 0 */
+    transform-origin: center center; /* Establecer el punto de origen en el centro */
+    animation: none;
+}
+
+.visible {
+    display: block;
+    animation: aparecer 0.8s forwards;
+}
+
+.desaparecer {
+    display: block;
+    animation: desaparecer 0.5s forwards;
+}
+.corazon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+button {
+    border: none;
+    background-color: white;
+}
+.buttom:hover {
+    opacity: 0.5;
+}
+
+button p {
+    margin: 0;
+}
+.comments-container {
+    background-color: white;
+    position: absolute;
+    left: 530px;
+    top: 140px;
+    width: 300px;
+    height: 490px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    height: 30px;
+}
+
+.titulo button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 5px;
+}
+
+.titulo h2 {
+    position: relative;
+    right: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.comments {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    height: 368px;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    border: 1px #CCC solid;
+    border-radius: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.comment-input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 50px;
+    font-size: 15px;
+}   
+
+.add-comment button {
+    background-color: transparent;
+    color: #0095f6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 15px;
+    cursor: pointer;
+    width: auto;
+}
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px #CCC solid;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user-avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.emoji-container {
+    position: absolute;
+    left: 725px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    top: 325px;
+    width: 300px;
+    height: 245px;
+    display: none;
+}
+.emoji:hover{
+    opacity: 0.5;
+}
+.share-container {
+    position: absolute;
+    left: 530px;
+    top: 140px;
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+    background-color: white;
+}
+.more-container {
+    background-color: white;
+    position: absolute;
+    left: 530px;
+    top: 450px;
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.more-container button{
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    text-align: left;
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+.more-container button:hover{
+    background-color: #CCC;
+}
+.guardar {
+    cursor: pointer;
+}
+.perfil{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.perfil-circulo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.adicional {
+    position: absolute;
+    bottom: 40px;
+    background-color: transparent;
+    width: 440px;
+    height: 40px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+}
+.seguir{
+    position: absolute;
+    bottom: 83px;
+    background-color: transparent;
+    width: 440px;
+    height: 40px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 0 0 5px;
+    font-size: 14px;
+}
+.musica{
+    position: absolute;
+    bottom: 4px;
+    background-color: transparent;
+    width: 440px;
+    height: 40px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 0 0 12px;
+    font-size: 14px;
+}
+.adicional button,.seguir button,.musica button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    width: auto;
+}
+.musica img{
+    margin: 0 8px 0 0;
+}
+/* Animación CSS para agrandar y luego encojer la imagen */
+@keyframes palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes aparecer {
+    0% {
+        transform: scale(0); /* Escalar desde 0 */
+    }
+    70% {
+        transform: scale(1.1); /* Escalar al 110% en el centro */
+    }
+    100% {
+        transform: scale(1); /* Escalar de nuevo al 100% */
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        transform: scale(1); /* Escalar desde 100% */
+    }
+    50% {
+        transform: scale(1.1);/* Escalar al 110% en el centro */
+    }
+    100% {
+        transform: scale(0); /* Escalar a 0 */
+    }
+}

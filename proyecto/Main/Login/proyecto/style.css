@@ -1,0 +1,229 @@
+/* Establece la fuente predeterminada para todos los elementos en la página */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo global para el cuerpo de la página */
+body {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 15px;  
+}
+
+/* Estilos para el contenedor principal del formulario de inicio de sesión */
+.main_login {
+    display: flex;
+}
+
+/* Estilos para la imagen de los teléfonos */
+.img__phones img {
+    width: 380px;
+}
+
+/* Estilos para el contenedor principal del formulario de inicio de sesión */
+.container__main__login {
+    margin: 50px;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.container__login {
+    margin-top: -35px;
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 300px;
+    height: auto;
+}
+
+/* Estilos para la imagen dentro del contenedor de inicio de sesión */
+.container__login img {
+    width: 170px;
+    padding: 30px 20px 40px 20px;
+}
+
+.formulario-input {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 250px;
+    margin: 0 0 -50px 0;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.formulario-submit {
+    margin-top: 10px;
+    background-color: #57b5f0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    width: 280px;
+    margin-bottom: 7px;
+}
+
+/* Estilos para el separador */
+.separador {
+    margin: -20px;
+}
+
+.separador img {
+    width: 260px;
+    height: 15px;
+}
+
+/* Estilos para la sección de inicio de sesión con Facebook */
+.iniciar__seccion_facebook {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+.iniciar__seccion_facebook img {
+    width: 5%;
+    height: 5%;
+    padding: 0;
+}
+
+.iniciar__seccion_facebook button {
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    color: #3b5998;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 10px 8px;
+}
+
+/* Estilos para el botón de olvidar contraseña */
+.olvido_contraseña {
+    text-align: center;
+}
+
+.olvido_contraseña button {
+    color: rgb(0, 55, 107);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Estilos para el contenedor de registro */
+.registrar {
+    width: auto !important;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.registrar p {
+    color: black;
+    font-size: 13px;
+    text-align: center;
+}
+
+.registrar button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: rgb(0, 149, 246);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Estilos para el contenedor de descarga de la aplicación */
+.descargar__aplicacion {
+    width: auto !important;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column !important;
+}
+
+.descargar__aplicacion p {
+    margin: 10px;
+}
+
+/* Estilos para las imágenes de las tiendas de aplicaciones */
+.tiendas__aplicacion img {
+    padding: 10px;
+    width: 120px;
+}
+
+/* Estilos para la barra de navegación */
+.barra__navegacion {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+}
+
+.barra__navegacion ul {
+    display: flex;
+}
+
+.barra__navegacion ul li {
+    padding: 5px;
+}
+
+/* Estilos para el cambio de idioma */
+.cambiar__idioma {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+#botonIdiomas {
+    color: rgb(115, 115, 115);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Estilos para la lista de idiomas oculta */
+.oculto {
+    display: none;
+    font-size: 14px;
+    font-weight: 100;
+    position: absolute;
+    top: -700px;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.oculto li:hover {
+    background-color: rgb(66, 97, 236);
+    color: white;
+}
+
+/* Estilos para el pie de página */
+.p__footer {
+    color: rgb(115, 115, 115);
+}

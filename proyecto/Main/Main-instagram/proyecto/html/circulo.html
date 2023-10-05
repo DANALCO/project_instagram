@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .comments-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .comments {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .add-comment {
+        display: flex;
+        align-items: center;
+    }
+
+    #comment-input {
+        flex-grow: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+
+    button {
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="comments-container">
+    <div class="comments">
+      <!-- Comentarios aquí -->
+    </div>
+    <div class="add-comment">
+      <input type="text" id="comment-input" placeholder="Escribe un comentario...">
+      <button onclick="addComment()">Publicar</button>
+    </div>
+  </div>
+  <script>
+    function addComment() {
+    const commentInput = document.getElementById("comment-input");
+    const commentText = commentInput.value.trim();
+
+    if (commentText !== "") {
+        const commentsDiv = document.querySelector(".comments");
+        const newComment = document.createElement("div");
+        newComment.textContent = commentText;
+        commentsDiv.appendChild(newComment);
+        commentInput.value = "";
+    }
+    }
+  </script>
+</body>
+</html>

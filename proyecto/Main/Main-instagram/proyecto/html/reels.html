@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/reels.css">
+</head>
+<body>
+    <div class="cont-video">
+        <div class="vid">
+            <video class="mostrarBtn myVideo" src="../assets/videos/video2.mp4" autoplay muted loop></video>
+            <img src="../assets/iconos/play.png" width="80px" alt="Imagen" class="oculto pausa">
+            <div class="mute-button" onclick="Mutear()"><img src="../assets/iconos/audio-off white.png" width="20px" class="mute" alt="Botón Mute"></div>
+            <div class="seguir"><button><div class="perfil-circulo"><img src="../assets/perfil/perfil5.jpg" width="40px"></div></button><button style="font-weight: bold;">Perfil 5</button><button class="seguirBoton" style="font-weight: bold;">. Seguir</button></div>
+            <div class="adicional">Me Muero De La Risa Ja Ja Ja</div>
+            <div class="musica"><img src="../assets/iconos/musical-note white.png" width="12px">Audio 1</div>
+        </div>
+        <div class="bar">
+            <button><img src="../assets/iconos/heart.png" class="corazon" width="25px" alt="Botón 1"><p>5</p></button>
+            <button onclick="toggleComments()"><img src="../assets/iconos/comments.png" width="25px" alt="Botón 2"><p>0</p></button>
+            <button onclick="toggleShare()"><img src="../assets/iconos/send.png" width="25px" alt="Botón 3"></button>
+            <button><img src="../assets/iconos/bookmark.png" class="guardar" width="25px" alt="Botón 4"></button>
+            <button onclick="toggleMore()"><img src="../assets/iconos/more.png" width="25px" alt="Botón 5"></button>
+            <button><div class="perfil"><img src="../assets/perfil/perfil5.jpg" width="25px" alt="Botón 6"></div></button>
+        </div>
+        <div class="comments-container">
+            <div class="titulo">
+              <button onclick="toggleComments()">X</button>
+              <h2>Comentarios</h2>
+            </div>
+            <div class="comments"></div>
+            <div class="add-comment">
+              <div class="user-avatar">
+                <img src="../assets/perfil/perfil1.jpg" width="35px" height="45px" alt="Avatar">
+              </div>
+              <input type="text" class="comment-input" placeholder="Escribe un comentario..." oninput="commentButton()">
+              <button class="publish-button" onclick="addComment()" style="display: none;">Publicar</button>
+              <img src="../assets/iconos/emoji.png" class="emoji" width="25px" style="margin: 0 5px 0 0; cursor: pointer;" alt="Botón de imagen" onclick="emojiButtonClick()">
+            </div>
+          </div>
+          <div class="emoji-container">
+            <div class="titulo">
+                <h2 style="color: #CCC;text-align: left;margin: 0;">Más populares</h2>
+            </div>
+          </div>
+        </div>
+        <div class="share-container">
+            <div class="titulo">
+                <button onclick="toggleShare()">X</button>
+                <h2>Compartir</h2>
+            </div>
+            <div style="height: 12px;">
+                <h2 style="margin:15px 15px;font-weight: bold;font-size: 18px;">Para:   <input type="text" placeholder="Buscar..." style="flex-grow: 1;border: none;border-radius: 5px;outline: none;margin: 0 10px;width: 190px;font-size: 15px;"></h2>
+            </div>
+            <hr style="width: 320px;position: relative;right: 10px;top: 10px;">
+            <div class="comments" style="height: 375px;"></div>
+            <hr style="width: 320px;position: relative;right: 10px;bottom: 10px;">
+            <div>
+                <button style="margin: 0 25px;border-radius: 5px;background-color: #0095f6;color: #CCC;width: 250px;height: 35px;opacity: 0.3;">Enviar</button>
+            </div>
+        </div>
+        <div class="more-container">
+            <button style="color: red;">Denunciar</button>
+            <button style="color: #0095f6;">Seguir</button>
+            <button>Ir a la publicación</button>
+            <button>Compartir en...</button>
+            <button>Copiar enlace</button>
+            <button>Código de inserción</button>
+            <button>Información sobre esta cuenta</button>
+        </div>
+    </div>
+    <script src="../java/reels.js"></script>
+</body>
+</html>

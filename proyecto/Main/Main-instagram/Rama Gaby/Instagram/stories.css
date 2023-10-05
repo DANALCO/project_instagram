@@ -1,0 +1,198 @@
+.stories-container {
+  display: flex;
+  background: #ffffff;
+  width: 706px;
+  margin: 0 0 0 50px;
+  padding: 20px 36px;
+  border-radius: 8px;
+  gap: 25px;
+  overflow: hidden;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+
+.stories-container::-webkit-scrollbar {
+  display: none;
+}
+
+.stories-container .content img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 300;
+  position: relative;
+  vertical-align: middle;
+}
+
+.stories-container .content {
+  position: relative;
+  cursor: pointer;
+}
+
+.stories-container .content::before {
+  content: "";
+  height: 65px;
+  width: 65px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+.stories-container .content::after {
+  content: "";
+  height: 71px;
+  width: 71px;
+  background: linear-gradient(#dd2a7b, #f58529);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.story-full {
+  background: #222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 100ms ease;
+}
+
+.story-full.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.story-full .close-btn {
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.story-full .like-bottom {
+  position: fixed;
+  cursor: pointer;
+  top: 550px;
+  left: 54%;
+}
+
+.story-full .send-bottom {
+  position: fixed;
+  cursor: pointer;
+  top: 550px;
+  left: 58%;
+}
+
+.story-full .content .right-arrow,
+.story-full .content .left-arrow {
+  width: 60px;
+  cursor: pointer;
+}
+
+.story-full .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.story-full img {
+  height: 90%;
+}
+
+.story-full .content .title {
+  position: absolute;
+  height: 20px;
+  width: 170px;
+  top: 550px;
+  left: 38%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  border-radius: 18px;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  padding: 8px 8px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .stories-container {
+    width: 90%;
+  }
+
+  .stories-container .content img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .stories-container .content::before {
+    height: 70px;
+    width: 70px;
+  }
+
+  .stories-container .content::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .story-full .content img {
+    height: 65%;
+  }
+}
+
+.nombre_stories {
+  margin-top: -20px;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.user_one {
+  margin-left: 75px;
+}
+
+.user_two {
+  margin-left: 25px;
+}
+
+.user_three {
+  margin-left: 20px;
+}
+
+.user_four {
+  margin-left: 25px;
+}
+
+.user_five {
+  margin-left: 25px;
+}
+
+.user_six {
+  margin-left: 15px;
+}
+
+.user_seven {
+  margin-left: 19px;
+}
+
+.user_eight {
+  margin-left: 25px;
+}

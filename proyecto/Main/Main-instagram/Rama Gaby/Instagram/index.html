@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./img/logoinsta.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./stories.css" rel="stylesheet" />
+    <link href="./botones.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Montserrat:ital,wght@0,400;1,200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--Aside izquierdo-->
+      <div class="aside">
+        <img class="logo" src="./img/instagram-logo-vector.png" width="103px" />
+        <div class="contendor_op">
+          <div class="inicio" id="inicio-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-home-2"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M10 12h4v4h-4z" />
+            </svg>
+            Inicio
+          </div>
+
+          <div class="buscar" id="buscar-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+            Buscar
+          </div>
+
+          <div class="menu_buscar activado">
+            <div class="buscar_up">
+              <div class="ref_buscar">
+                <b>Buscar</b>
+              </div>
+              <div class="buscador">
+                <input type="text" placeholder="Buscar" />
+              </div>
+            </div>
+
+            <div class="buscar_down">
+              <div class="recientes">Recientes</div>
+              <div class="borrar">Borrar todo</div>
+            </div>
+          </div>
+
+          <div class="explorar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-safari"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            </svg>
+            Explorar
+          </div>
+
+          <div class="reels">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-youtube"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+              />
+              <path d="M10 9l5 3l-5 3z" />
+            </svg>
+            Reels
+          </div>
+
+          <div class="mensajes">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-messenger"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              <path d="M8 13l3 -2l2 2l3 -2" />
+            </svg>
+            Mensajes
+          </div>
+
+          <div class="notificaciones">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-heart"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+              />
+            </svg>
+            Notificaciones
+          </div>
+
+          <div class="crear">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-circle-plus"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="padding-right: 5px; margin-bottom: -5px"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+              <path d="M9 12h6" />
+              <path d="M12 9v6" />
+            </svg>
+            Crear
+          </div>
+
+          <div class="perfil_menu">
+            <img
+              src="./img/fotos_perfil/perfil1.jpg"
+              width="25"
+              height="25"
+              style="
+                border-radius: 150px;
+                padding-right: 5px;
+                margin-bottom: -5px;
+              "
+            />
+            Perfil
+          </div>
+        </div>
+
+        <!--Boton más-->
+
+        <div class="mas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-baseline-density-medium"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="padding-right: 5px; margin-bottom: -5px"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 20h16" />
+            <path d="M4 12h16" />
+            <path d="M4 4h16" />
+          </svg>
+          Más
+          <div class="menu_mas actives">
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-settings"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                />
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              </svg>
+              Configuración
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-clock-hour-7"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 12l-2 3" />
+                <path d="M12 7v5" />
+              </svg>
+              Tu actividad
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+              Guardado
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-sun-low"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M4 12h.01" />
+                <path d="M12 4v.01" />
+                <path d="M20 12h.01" />
+                <path d="M12 20v.01" />
+                <path d="M6.31 6.31l-.01 -.01" />
+                <path d="M17.71 6.31l-.01 -.01" />
+                <path d="M17.7 17.7l.01 .01" />
+                <path d="M6.3 17.7l.01 .01" />
+              </svg>
+              Apariencia
+            </div>
+
+            <div class="ref_mas">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-alert-square-rounded"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+                />
+                <path d="M12 8v4" />
+                <path d="M12 16h.01" />
+              </svg>
+              Reportar un problema
+            </div>
+
+            <div class="down-table">
+              <p>Cambiar de cuenta</p>
+              <p>Salir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <section class="body">
+        <div class="stories-container">
+          <!--<div class="content">
+                <img src="img/stories/uno.jpg" alt=""/>
+            </div>
+
+            <div class="content">
+                <img src="img/stories/dos.jpg" alt=""/>
+            </div>
+
+            <div class="content">
+                <img src="img/stories/tres.jpg" alt=""/>
+            </div>
+
+            <div class="content">
+                <img src="img/stories/cuartojpg.jpg" alt=""/>
+            </div>
+
+            <div class="content">
+                <img src="img/stories/quinto.jpg" alt=""/>
+            </div>
+        
+            <div class="content">
+                <img src="img/stories/quinto.jpg" alt=""/>
+            </div>
+        
+            <div class="content">
+                <img src="img/stories/quinto.jpg" alt=""/>
+            </div>
+        
+            <div class="content">
+                <img src="img/stories/quinto.jpg" alt=""/>
+            </div>-->
+        </div> 
+        
+        <div class="nombre_stories">
+          <p class="user_one">Tu historia</p>
+          <p class="user_two">Erick Lozano</p>
+          <p class="user_three">Valen Ganoa</p>
+          <p class="user_four">Camilo B.</p>
+          <p class="user_five">Mila Restrepo</p>
+          <p class="user_six">Dario Tonetto</p>
+          <p class="user_seven">Sofia Llano</p>
+          <p class="user_eight">Pablo Suiza</p>
+        </div>
+
+        <div class="story-full">
+          <div class="content">
+            <div class="close-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+
+            <div class="left-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+
+            <img src="img/stories/cuarto.jpg" alt="" />
+
+            <div class="right-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <div class="title">Test Title</div>
+
+            <div class="like-bottom">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+
+            <div class="send-bottom">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="38"
+                height="38"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!--Posts-->
+
+        <div class="posts">
+          <nav class="perfil_post">
+            <img
+              src="./img/fotos_perfil/perfil1.jpg"
+              width="35"
+              height="35"
+              style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+            />
+            <nav class="username-post">
+              <b>lunaferrer<b style="color: grey">• 3 min</b></b>
+              Australia
+            </nav>
+
+            <nav class="more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-dots"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            </nav>
+          </nav>
+
+          <img
+            src="./img/posts/first.jpg"
+            height="400"
+            width=""
+            style="border-radius: 5px"
+          />
+
+          <div class="bottoms">
+            <div class="like">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <div class="send">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-circle-2"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              </svg>
+            </div>
+            <div class="share">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+            <div class="save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+            </div>
+
+            <div class="menu_guardar activar">
+                <div class="ref_guardar">
+                  <p>Colecciones</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 5l0 14" />
+                    <path d="M5 12l14 0" />
+                  </svg>
+                </div>
+
+                <div class="guardar_down">
+                  <nav class="comida">
+                    <img src="./img/stories/comida.jpg" width="25" height="25">
+                     <p>Comida</p>
+                  </nav>
+                  <nav class="ejercicio">
+                    <img src="./img/stories/ejercicio.jpg" width="25" height="25"> 
+                    <p>Entrenos</p>
+                  </nav>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="description-post">
+            <p><b>29 Me gusta</b></p>
+            <p><b>lunaferrer</b></p>
+            <input type="text" placeholder="Agrega un comentario..." />
+          </div>
+        </div>
+
+        <!--Post dos-->
+        <div class="posts">
+          <nav class="perfil_post">
+            <img
+              src="./img/fotos_perfil/perfil7.jpg"
+              width="35"
+              height="35"
+              style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+            />
+            <nav class="username-post">
+              <b>dariotonetto<b style="color: grey">• 15 min</b></b>
+              España
+            </nav>
+
+            <nav class="more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-dots"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            </nav>
+          </nav>
+
+          <img
+            src="./img/posts/second.jpg"
+            height="400"
+            width=""
+            style="border-radius: 5px"
+          />
+
+          <div class="bottoms">
+            <div class="like">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <div class="send">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-circle-2"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              </svg>
+            </div>
+            <div class="share">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+            <div class="save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+            </div>
+
+            <div class="menu_guardar activar">
+              <div class="ref_guardar">
+                <p>Colecciones</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 5l0 14" />
+                  <path d="M5 12l14 0" />
+                </svg>
+              </div>
+
+              <div class="guardar_down">
+                <nav class="comida">
+                  <img src="./img/stories/comida.jpg" width="25" height="25">
+                   <p>Comida</p>
+                </nav>
+                <nav class="ejercicio">
+                  <img src="./img/stories/ejercicio.jpg" width="25" height="25"> 
+                  <p>Entrenos</p>
+                </nav>
+              </div>
+          </div>
+          </div>
+
+          <div class="description-post">
+            <p><b>54 Me gusta</b></p>
+            <p><b>dariotonetto</b></p>
+            <input type="text" placeholder="Agrega un comentario..." />
+          </div>
+        </div>
+
+        <!--Post tres-->
+        <div class="posts">
+          <nav class="perfil_post">
+            <img
+              src="./img/fotos_perfil/perfil2.jpg"
+              width="35"
+              height="35"
+              style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+            />
+            <nav class="username-post">
+              <b>valent_gt<b style="color: grey">• 45 min</b></b>
+              Grecia
+            </nav>
+
+            <nav class="more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-dots"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            </nav>
+          </nav>
+
+          <img
+            src="./img/posts/third.jpg"
+            height="400"
+            width=""
+            style="border-radius: 5px"
+          />
+
+          <div class="bottoms">
+            <div class="like">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <div class="send">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-circle-2"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              </svg>
+            </div>
+            <div class="share">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+            <div class="save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="menu_guardar activar">
+            <div class="ref_guardar">
+              <p>Colecciones</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 5l0 14" />
+                <path d="M5 12l14 0" />
+              </svg>
+            </div>
+      
+            <div class="guardar_down">
+              <nav class="comida">
+                <img src="./img/stories/comida.jpg" width="25" height="25">
+                 <p>Comida</p>
+              </nav>
+              <nav class="ejercicio">
+                <img src="./img/stories/ejercicio.jpg" width="25" height="25"> 
+                <p>Entrenos</p>
+              </nav>
+            </div>
+        </div>
+
+          <div class="description-post">
+            <p><b>14 Me gusta</b></p>
+            <p><b>valent_gt</b></p>
+            <input type="text" placeholder="Agrega un comentario..." />
+          </div>
+        </div>
+
+        <!--Post cuatro-->
+        <div class="posts">
+          <nav class="perfil_post">
+            <img
+              src="./img/fotos_perfil/perfil6.jpg"
+              width="35"
+              height="35"
+              style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+            />
+            <nav class="username-post">
+              <b>camilo.b<b style="color: grey">•  1h</b></b>
+              Nowhere
+            </nav>
+
+            <nav class="more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-dots"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            </nav>
+          </nav>
+
+          <img
+            src="./img/posts/four.jpg"
+            height="400"
+            width=""
+            style="border-radius: 5px"
+          />
+
+          <div class="bottoms">
+            <div class="like">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <div class="send">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-circle-2"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              </svg>
+            </div>
+            <div class="share">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+            <div class="save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="menu_guardar activar">
+            <div class="ref_guardar">
+              <p>Colecciones</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 5l0 14" />
+                <path d="M5 12l14 0" />
+              </svg>
+            </div>
+            
+
+            <div class="guardar_down">
+              <nav class="comida">
+                <img src="./img/stories/comida.jpg" width="25" height="25">
+                 <p>Comida</p>
+              </nav>
+              <nav class="ejercicio">
+                <img src="./img/stories/ejercicio.jpg" width="25" height="25"> 
+                <p>Entrenos</p>
+              </nav>
+            </div>
+        </div>
+
+          <div class="description-post">
+            <p><b>191 Me gusta</b></p>
+            <p><b>camilo.b</b></p>
+            <input type="text" placeholder="Agrega un comentario..." />
+          </div>
+        </div>
+
+        <!--Post cinco-->
+        <div class="posts">
+          <nav class="perfil_post">
+            <img
+              src="./img/fotos_perfil/perfil3.jpg"
+              width="35"
+              height="35"
+              style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+            />
+            <nav class="username-post">
+              <b>docMila<b style="color: grey">•  2h</b></b>
+              USA
+            </nav>
+
+            <nav class="more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-dots"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            </nav>
+          </nav>
+
+          <img
+            src="./img/posts/seven.jpg"
+            height="400"
+            width=""
+            style="border-radius: 5px"
+          />
+
+          <div class="bottoms">
+            <div class="like">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <div class="send">
+              <nav class="closeBtnEnviar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-circle-2"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              </svg>
+              </nav>
+            </div>
+            <div class="share">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-send"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 14l11 -11" />
+                <path
+                  d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                />
+              </svg>
+            </div>
+
+            <div class="menu_share activarr">
+              <div class="buscar_up">
+                <p><b>Compartir</b></p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </div>
+
+              <div class="buscar_para">
+                <p><b>Para:</b></p>
+                <input type="text" placeholder="Buscar..." />
+              </div>
+
+              <div class="buscar_destinatarios">
+                <p><b>Sugerencias</b></p>
+                <nav class="destinatario_uno">
+                  <nav class="username-enviar">
+                    <img
+                    src="./img/fotos_perfil/perfil3.jpg"
+                    width="35"
+                    height="35"
+                    style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+                  />
+                  <nav class="nickname">
+                    <b>docMila</b>
+                    <p>XXXXXX</p>
+                  </nav>
+                  </nav>
+
+                  <input type="radio" value="check">
+                </nav>
+                <nav class="destinatario_dos">
+                  <nav class="username-enviar">
+                    <img
+                    src="./img/fotos_perfil/perfil3.jpg"
+                    width="35"
+                    height="35"
+                    style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+                    />
+                    <nav class="nickname">
+                      <b>docMila</b>
+                      <p>XXXXXX</p>
+                    </nav>
+                  </nav>
+                </nav>
+                <nav class="destinatario_tres">
+                  <nav class="username-enviar">
+                    <img
+                    src="./img/fotos_perfil/perfil3.jpg"
+                    width="35"
+                    height="35"
+                    style="border-radius: 76px; padding-left: 5px; padding-right: 5px"
+                    />
+                    <nav class="nickname">
+                      <b>docMila</b>
+                      <p>XXXXXX</p>
+                    </nav>
+                  </nav>
+                </nav>
+
+                <script>
+                const enviarContainer = document.querySelector(".menu_share");
+                const enviar = document.querySelector(".share");
+
+                enviar.addEventListener("click", () => {
+                  enviarContainer.classList.toggle("activarr");
+                });
+
+                closeBtnEnviar.addEventListener("click", () => {
+                  enviarContainer.classList.remove("active");
+                });
+                </script>
+
+              </div>
+            </div>
+
+            <div class="save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bookmark"
+                width="27"
+                height="27"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="padding-right: 5px"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                />
+              </svg>
+            </div>
+
+            <div class="menu_guardar activar">
+              <div class="ref_guardar">
+                <p>Colecciones</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 5l0 14" />
+                  <path d="M5 12l14 0" />
+                </svg>
+              </div>
+
+              <div class="guardar_down">
+                <nav class="comida">
+                  <img src="./img/stories/comida.jpg" width="25" height="25">
+                   <p>Comida</p>
+                </nav>
+                <nav class="ejercicio">
+                  <img src="./img/stories/ejercicio.jpg" width="25" height="25"> 
+                  <p>Entrenos</p>
+                </nav>
+              </div>
+          </div>
+          </div>
+
+          <div class="description-post">
+            <p><b>122 Me gusta</b></p>
+            <p><b>docMila</b></p>
+            <input type="text" placeholder="Agrega un comentario..." />
+          </div>
+        </div>
+      </section>
+      <!--Aside derecho-->
+      <div class="aside_right">
+        <div class="perfil">
+          <img
+            src="./img/fotos_perfil/perfil1.jpg"
+            width="45"
+            height="45"
+            style="border-radius: 76px; padding-right: 5px"
+          />
+          <nav class="username_perfil">
+            <b>lunaferrer</b>
+            Luna Ferrer Muñoz
+          </nav>
+
+          <!--Cambiar-->
+          <nav class="cambiar">
+            Cambiar
+              <div class="menu_cambiar activ">
+                <div class="cambiar_up">
+                  Cambiar de cuenta
+                  <div class="close-btn-cambiar">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-x"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M18 6l-12 12" />
+                      <path d="M6 6l12 12" />
+                    </svg>
+                  </div>
+                </div>
+
+                <nav class="cambiar_middle">
+                  <div class="perfil">
+                    <img
+                      src="./img/fotos_perfil/perfil1.jpg"
+                      width="45"
+                      height="45"
+                      style="border-radius: 76px; padding-right: 5px"
+                    />
+                    <nav class="usernamemiddle">
+                      <b>gabym_g26</b>
+                    </nav>
+
+                    <nav class="check_cambiar">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-circle-check-filled"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        style="margin-left: 95px"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+                          stroke-width="0"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </nav>
+                  </div>
+                </nav>
+
+                <nav class="cambiar_bottom">Iniciar sesion en otra cuenta</nav>
+              </div>
+        </div>
+
+        <!--Sugerencias-->
+        <div class="sugerencias_container">
+          <nav class="sugerencias">
+            <b style="color: grey">Sugerencias para ti</b>
+            <b style="cursor: pointer;">Ver todo</b>
+          </nav>
+
+          <nav class="lista">
+            <nav class="perfil_sugerencias">
+                <img
+                  src="./img/fotos_perfil/evan.jpg"
+                  width="45px"
+                  height="45px"
+                  style="border-radius: 76px"
+                />
+                <nav class="username">
+                  <b>evan.castro_</b>
+                  Evangeline Castro
+                </nav>
+
+                <nav class="btn-seguir">Seguir</nav>
+            </nav>
+
+            <nav class="perfil_sugerencias">
+              <img
+                src="./img/fotos_perfil/orange.jpeg"
+                width="45px"
+                style="border-radius: 76px"
+              />
+              <nav class="usernameball">
+                <b>orangeball_basketball
+                </b>
+                Orange Ball Basketball
+              </nav>
+
+              <nav class="btn-seguir">Seguir</nav>
+            </nav>
+
+            <nav class="perfil_sugerencias">
+              
+              <img
+                src="./img/fotos_perfil/karen.jpg"
+                width="45px"
+                height="45px"
+                style="border-radius: 76px"
+              />
+              <nav class="username">
+                <b>karen_castano11</b>
+                Karen Castaño
+              </nav>
+
+              <nav class="btn-seguir">Seguir</nav>
+              </nav>
+            </nav>
+
+            <nav class="perfil_sugerencias">
+              <img
+                src="./img/fotos_perfil/e.jpg"
+                width="45px"
+                style="border-radius: 76px"
+              />
+              <nav class="usernamee">
+                <b>eonlinelatino</b>
+                E! Latin America
+              </nav>
+
+              <nav class="btn-seguir">Seguir</nav>
+            </nav>
+            </nav>
+
+            <nav class="perfil_sugerencias">
+              <img
+                src="./img/fotos_perfil/eliot.jpeg"
+                width="45px"
+                style="border-radius: 76px"
+              />
+              <nav class="usernameeliot">
+                <b>eliotmedia</b>
+                ELIOT MEDIA
+              </nav>
+
+              <nav class="btn-seguir">Seguir</nav>
+            </nav>
+          </nav>
+
+          <nav class="footer">
+            <nav class="links">
+              <a href="https://about.instagram.com/" target="_blank"
+                >Información. </a
+              ><a href="https://help.instagram.com/" target="_blank">Ayuda. </a
+              ><a href="https://about.instagram.com/blog" target="_blank"
+                >Prensa. </a
+              ><a
+                href="https://developers.facebook.com/docs/instagram"
+                target="_blank"
+                >API. </a
+              ><a href="" target="_blank">Empleo. </a>
+              <a
+                href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+                target="_blank"
+                >Privacidad. </a
+              ><a
+                href="https://help.instagram.com/581066165581870/"
+                target="_blank"
+                >Condiciones. </a
+              ><a
+                href="https://www.instagram.com/explore/locations/"
+                target="_blank"
+                >Ubicaciones. </a
+              ><a
+                href="https://www.instagram.com/language/preferences/"
+                target="_blank"
+                >Idioma. </a
+              ><br />
+              <a
+                href="https://about.meta.com/technologies/meta-verified/"
+                target="_blank"
+                >Mera Verified.
+              </a>
+            </nav>
+
+            <nav class="end">&copy 2023 INSTAGRAM FROM META</nav>
+          </nav>
+        </div>
+      </div>
+    </main>
+    <script src="./stories.js"></script>
+    <script src="./mas.js"></script>
+    <script src="./post.js"></script>
+  </body>
+</html>
